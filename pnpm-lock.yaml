@@ -552,6 +552,9 @@ importers:
       '@univerjs/preset-sheets-core':
         specifier: workspace:*
         version: link:../presets/sheets-core
+      '@univerjs/preset-sheets-sort':
+        specifier: workspace:*
+        version: link:../presets/sheets-sort
       '@univerjs/presets':
         specifier: workspace:*
         version: link:../presets/presets
@@ -686,7 +689,7 @@ importers:
         version: 19.2.4(react@19.2.4)
       react-mosaic-component:
         specifier: ^6.1.1
-        version: 6.1.1(@types/node@25.3.5)(@types/react@19.2.14)(dnd-core@16.0.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 6.1.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(dnd-core@16.0.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       rxjs:
         specifier: ^7.8.2
         version: 7.8.2
@@ -3214,6 +3217,182 @@ importers:
         specifier: ^4.0.18
         version: 4.0.18(@types/node@25.3.5)(happy-dom@20.7.0)(jiti@2.6.1)(jsdom@27.0.1)(sass@1.87.0)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2)
 
+  presets/docs-core:
+    dependencies:
+      '@univerjs/design':
+        specifier: workspace:*
+        version: link:../../packages/design
+      '@univerjs/docs':
+        specifier: workspace:*
+        version: link:../../packages/docs
+      '@univerjs/docs-ui':
+        specifier: workspace:*
+        version: link:../../packages/docs-ui
+      '@univerjs/engine-formula':
+        specifier: workspace:*
+        version: link:../../packages/engine-formula
+      '@univerjs/engine-render':
+        specifier: workspace:*
+        version: link:../../packages/engine-render
+      '@univerjs/network':
+        specifier: workspace:*
+        version: link:../../packages/network
+      '@univerjs/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/docs-drawing:
+    dependencies:
+      '@univerjs/docs-drawing':
+        specifier: workspace:*
+        version: link:../../packages/docs-drawing
+      '@univerjs/docs-drawing-ui':
+        specifier: workspace:*
+        version: link:../../packages/docs-drawing-ui
+      '@univerjs/drawing':
+        specifier: workspace:*
+        version: link:../../packages/drawing
+      '@univerjs/drawing-ui':
+        specifier: workspace:*
+        version: link:../../packages/drawing-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/docs-hyper-link:
+    dependencies:
+      '@univerjs/docs-hyper-link':
+        specifier: workspace:*
+        version: link:../../packages/docs-hyper-link
+      '@univerjs/docs-hyper-link-ui':
+        specifier: workspace:*
+        version: link:../../packages/docs-hyper-link-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/docs-node-core:
+    dependencies:
+      '@univerjs/docs':
+        specifier: workspace:*
+        version: link:../../packages/docs
+      '@univerjs/docs-drawing':
+        specifier: workspace:*
+        version: link:../../packages/docs-drawing
+      '@univerjs/docs-hyper-link':
+        specifier: workspace:*
+        version: link:../../packages/docs-hyper-link
+      '@univerjs/drawing':
+        specifier: workspace:*
+        version: link:../../packages/drawing
+      '@univerjs/engine-formula':
+        specifier: workspace:*
+        version: link:../../packages/engine-formula
+      '@univerjs/engine-render':
+        specifier: workspace:*
+        version: link:../../packages/engine-render
+      '@univerjs/rpc-node':
+        specifier: workspace:*
+        version: link:../../packages/rpc-node
+      '@univerjs/thread-comment':
+        specifier: workspace:*
+        version: link:../../packages/thread-comment
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/docs-thread-comment:
+    dependencies:
+      '@univerjs/docs-thread-comment-ui':
+        specifier: workspace:*
+        version: link:../../packages/docs-thread-comment-ui
+      '@univerjs/thread-comment':
+        specifier: workspace:*
+        version: link:../../packages/thread-comment
+      '@univerjs/thread-comment-ui':
+        specifier: workspace:*
+        version: link:../../packages/thread-comment-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
   presets/presets:
     dependencies:
       '@univerjs/core':
@@ -3229,6 +3408,34 @@ importers:
       '@univerjs-infra/shared':
         specifier: workspace:*
         version: link:../../common/shared
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-conditional-formatting:
+    dependencies:
+      '@univerjs/sheets-conditional-formatting':
+        specifier: workspace:*
+        version: link:../../packages/sheets-conditional-formatting
+      '@univerjs/sheets-conditional-formatting-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-conditional-formatting-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
       react:
         specifier: 19.2.4
         version: 19.2.4
@@ -3283,6 +3490,334 @@ importers:
       '@univerjs/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-data-validation:
+    dependencies:
+      '@univerjs/data-validation':
+        specifier: workspace:*
+        version: link:../../packages/data-validation
+      '@univerjs/sheets-data-validation':
+        specifier: workspace:*
+        version: link:../../packages/sheets-data-validation
+      '@univerjs/sheets-data-validation-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-data-validation-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-drawing:
+    dependencies:
+      '@univerjs/docs-drawing':
+        specifier: workspace:*
+        version: link:../../packages/docs-drawing
+      '@univerjs/drawing':
+        specifier: workspace:*
+        version: link:../../packages/drawing
+      '@univerjs/drawing-ui':
+        specifier: workspace:*
+        version: link:../../packages/drawing-ui
+      '@univerjs/sheets-drawing':
+        specifier: workspace:*
+        version: link:../../packages/sheets-drawing
+      '@univerjs/sheets-drawing-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-drawing-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-filter:
+    dependencies:
+      '@univerjs/sheets-filter':
+        specifier: workspace:*
+        version: link:../../packages/sheets-filter
+      '@univerjs/sheets-filter-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-filter-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-find-replace:
+    dependencies:
+      '@univerjs/find-replace':
+        specifier: workspace:*
+        version: link:../../packages/find-replace
+      '@univerjs/sheets-find-replace':
+        specifier: workspace:*
+        version: link:../../packages/sheets-find-replace
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-hyper-link:
+    dependencies:
+      '@univerjs/sheets-hyper-link':
+        specifier: workspace:*
+        version: link:../../packages/sheets-hyper-link
+      '@univerjs/sheets-hyper-link-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-hyper-link-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-node-core:
+    dependencies:
+      '@univerjs/docs':
+        specifier: workspace:*
+        version: link:../../packages/docs
+      '@univerjs/engine-formula':
+        specifier: workspace:*
+        version: link:../../packages/engine-formula
+      '@univerjs/engine-render':
+        specifier: workspace:*
+        version: link:../../packages/engine-render
+      '@univerjs/rpc-node':
+        specifier: workspace:*
+        version: link:../../packages/rpc-node
+      '@univerjs/sheets':
+        specifier: workspace:*
+        version: link:../../packages/sheets
+      '@univerjs/sheets-data-validation':
+        specifier: workspace:*
+        version: link:../../packages/sheets-data-validation
+      '@univerjs/sheets-drawing':
+        specifier: workspace:*
+        version: link:../../packages/sheets-drawing
+      '@univerjs/sheets-filter':
+        specifier: workspace:*
+        version: link:../../packages/sheets-filter
+      '@univerjs/sheets-formula':
+        specifier: workspace:*
+        version: link:../../packages/sheets-formula
+      '@univerjs/sheets-hyper-link':
+        specifier: workspace:*
+        version: link:../../packages/sheets-hyper-link
+      '@univerjs/sheets-numfmt':
+        specifier: workspace:*
+        version: link:../../packages/sheets-numfmt
+      '@univerjs/sheets-sort':
+        specifier: workspace:*
+        version: link:../../packages/sheets-sort
+      '@univerjs/sheets-thread-comment':
+        specifier: workspace:*
+        version: link:../../packages/sheets-thread-comment
+      '@univerjs/thread-comment':
+        specifier: workspace:*
+        version: link:../../packages/thread-comment
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-note:
+    dependencies:
+      '@univerjs/sheets-note':
+        specifier: workspace:*
+        version: link:../../packages/sheets-note
+      '@univerjs/sheets-note-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-note-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-sort:
+    dependencies:
+      '@univerjs/sheets-sort':
+        specifier: workspace:*
+        version: link:../../packages/sheets-sort
+      '@univerjs/sheets-sort-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-sort-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-table:
+    dependencies:
+      '@univerjs/sheets-table':
+        specifier: workspace:*
+        version: link:../../packages/sheets-table
+      '@univerjs/sheets-table-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-table-ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-thread-comment:
+    dependencies:
+      '@univerjs/sheets-thread-comment':
+        specifier: workspace:*
+        version: link:../../packages/sheets-thread-comment
+      '@univerjs/sheets-thread-comment-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-thread-comment-ui
+      '@univerjs/thread-comment':
+        specifier: workspace:*
+        version: link:../../packages/thread-comment
+      '@univerjs/thread-comment-ui':
+        specifier: workspace:*
+        version: link:../../packages/thread-comment-ui
     devDependencies:
       '@univerjs-infra/shared':
         specifier: workspace:*
@@ -5934,6 +6469,11 @@ packages:
 
   '@types/fs-extra@11.0.4':
     resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
+
+  '@types/hoist-non-react-statics@3.3.7':
+    resolution: {integrity: sha512-PQTyIulDkIDro8P+IHbKCsw7U2xxBYflVzW/FgWdCAePD9xGSidgA76/GeJ6lBKoblyhf9pBY763gbrN+1dI8g==}
+    peerDependencies:
+      '@types/react': 19.2.14
 
   '@types/html-minifier-terser@6.1.0':
     resolution: {integrity: sha512-oh/6byDPnL1zeNXFrDXFLyZjkr1MsBG667IM792caf1L2UPOOMf65NFzjUH/ltyfwjAGfs1rsX1eftK0jC/KIg==}
@@ -13769,6 +14309,12 @@ snapshots:
       '@types/jsonfile': 6.1.4
       '@types/node': 22.15.17
 
+  '@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14)':
+    dependencies:
+      '@types/react': 19.2.14
+      hoist-non-react-statics: 3.3.2
+    optional: true
+
   '@types/html-minifier-terser@6.1.0': {}
 
   '@types/json-schema@7.0.15': {}
@@ -18410,26 +18956,26 @@ snapshots:
     dependencies:
       dnd-core: 16.0.1
 
-  react-dnd-multi-backend@8.1.2(dnd-core@16.0.1)(react-dnd@16.0.1(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  react-dnd-multi-backend@8.1.2(dnd-core@16.0.1)(react-dnd@16.0.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
       dnd-core: 16.0.1
       dnd-multi-backend: 8.1.2(dnd-core@16.0.1)
       react: 19.2.4
-      react-dnd: 16.0.1(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4)
-      react-dnd-preview: 8.1.2(react-dnd@16.0.1(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4)
+      react-dnd: 16.0.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4)
+      react-dnd-preview: 8.1.2(react-dnd@16.0.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4)
       react-dom: 19.2.4(react@19.2.4)
 
-  react-dnd-preview@8.1.2(react-dnd@16.0.1(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4):
+  react-dnd-preview@8.1.2(react-dnd@16.0.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4))(react@19.2.4):
     dependencies:
       react: 19.2.4
-      react-dnd: 16.0.1(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4)
+      react-dnd: 16.0.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4)
 
   react-dnd-touch-backend@16.0.1:
     dependencies:
       '@react-dnd/invariant': 4.0.2
       dnd-core: 16.0.1
 
-  react-dnd@16.0.1(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4):
+  react-dnd@16.0.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4):
     dependencies:
       '@react-dnd/invariant': 4.0.2
       '@react-dnd/shallowequal': 4.0.2
@@ -18438,6 +18984,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 19.2.4
     optionalDependencies:
+      '@types/hoist-non-react-statics': 3.3.7(@types/react@19.2.14)
       '@types/node': 25.3.5
       '@types/react': 19.2.14
 
@@ -18486,7 +19033,7 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-mosaic-component@6.1.1(@types/node@25.3.5)(@types/react@19.2.14)(dnd-core@16.0.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  react-mosaic-component@6.1.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(dnd-core@16.0.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
       classnames: 2.5.1
       immutability-helper: 3.1.1
@@ -18494,9 +19041,9 @@ snapshots:
       prop-types: 15.8.1
       rdndmb-html5-to-touch: 8.1.2(dnd-core@16.0.1)
       react: 19.2.4
-      react-dnd: 16.0.1(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4)
+      react-dnd: 16.0.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4)
       react-dnd-html5-backend: 16.0.1
-      react-dnd-multi-backend: 8.1.2(dnd-core@16.0.1)(react-dnd@16.0.1(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react-dnd-multi-backend: 8.1.2(dnd-core@16.0.1)(react-dnd@16.0.1(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.14))(@types/node@25.3.5)(@types/react@19.2.14)(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react-dnd-touch-backend: 16.0.1
       uuid: 9.0.1
     transitivePeerDependencies:

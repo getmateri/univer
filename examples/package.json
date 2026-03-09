@@ -39,6 +39,7 @@
         "@univerjs/mockdata": "workspace:*",
         "@univerjs/network": "workspace:*",
         "@univerjs/preset-sheets-core": "workspace:*",
+        "@univerjs/preset-sheets-sort": "workspace:*",
         "@univerjs/presets": "workspace:*",
         "@univerjs/rpc": "workspace:*",
         "@univerjs/rpc-node": "workspace:*",

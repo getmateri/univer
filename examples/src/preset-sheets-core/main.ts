@@ -16,8 +16,8 @@
 
 import { UniverSheetsCorePreset } from '@univerjs/preset-sheets-core';
 import sheetsCoreZhCN from '@univerjs/preset-sheets-core/locales/zh-CN';
-// import { UniverSheetsSortPreset } from '@univerjs/preset-sheets-sort';
-// import sheetsSortZhCN from '@univerjs/preset-sheets-sort/locales/zh-CN';
+import { UniverSheetsSortPreset } from '@univerjs/preset-sheets-sort';
+import sheetsSortZhCN from '@univerjs/preset-sheets-sort/locales/zh-CN';
 import { createUniver, defaultTheme, LocaleType, mergeLocales } from '@univerjs/presets';
 import { UniverSheetsZenEditorPlugin } from '@univerjs/sheets-zen-editor';
 import sheetsZenEditorZhCN from '@univerjs/sheets-zen-editor/locale/zh-CN';
@@ -29,7 +29,7 @@ const { univerAPI } = createUniver({
     locales: {
         zhCN: mergeLocales(
             sheetsCoreZhCN,
-            // sheetsSortZhCN,
+            sheetsSortZhCN,
             sheetsZenEditorZhCN
         ),
     },
@@ -39,7 +39,7 @@ const { univerAPI } = createUniver({
             disableTextFormatAlert: true,
             disableTextFormatMark: true,
         }),
-        // UniverSheetsSortPreset(),
+        UniverSheetsSortPreset(),
     ],
     plugins: [
         UniverSheetsZenEditorPlugin,

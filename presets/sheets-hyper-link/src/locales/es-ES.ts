@@ -14,21 +14,10 @@
  * limitations under the License.
  */
 
-import { build } from '@univerjs-infra/shared/vite';
+import { mergeLocales } from '@univerjs/core';
 
-build({
-    umdAdditionalLocales: [
-        '@univerjs/design',
-    ],
-    umdDeps: [
-        '@univerjs/ui',
-        '@univerjs/docs',
-        '@univerjs/docs-ui',
-        '@univerjs/sheets',
-        '@univerjs/sheets-ui',
-        '@univerjs/sheets-formula',
-        '@univerjs/sheets-formula-ui',
-        '@univerjs/sheets-numfmt',
-        '@univerjs/sheets-numfmt-ui',
-    ],
-});
+import univerjssheetshyperlinkui from '@univerjs/sheets-hyper-link-ui/locale/es-ES';
+
+export default mergeLocales(
+    univerjssheetshyperlinkui
+);
