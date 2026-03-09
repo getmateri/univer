@@ -549,6 +549,12 @@ importers:
       '@univerjs/network':
         specifier: workspace:*
         version: link:../packages/network
+      '@univerjs/preset-sheets-core':
+        specifier: workspace:*
+        version: link:../presets/sheets-core
+      '@univerjs/presets':
+        specifier: workspace:*
+        version: link:../presets/presets
       '@univerjs/rpc':
         specifier: workspace:*
         version: link:../packages/rpc
@@ -3207,6 +3213,95 @@ importers:
       vitest:
         specifier: ^4.0.18
         version: 4.0.18(@types/node@25.3.5)(happy-dom@20.7.0)(jiti@2.6.1)(jsdom@27.0.1)(sass@1.87.0)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.2)
+
+  presets/presets:
+    dependencies:
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@univerjs/design':
+        specifier: workspace:*
+        version: link:../../packages/design
+      '@univerjs/themes':
+        specifier: workspace:*
+        version: link:../../packages/themes
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+
+  presets/sheets-core:
+    dependencies:
+      '@univerjs/docs':
+        specifier: workspace:*
+        version: link:../../packages/docs
+      '@univerjs/docs-ui':
+        specifier: workspace:*
+        version: link:../../packages/docs-ui
+      '@univerjs/engine-formula':
+        specifier: workspace:*
+        version: link:../../packages/engine-formula
+      '@univerjs/engine-render':
+        specifier: workspace:*
+        version: link:../../packages/engine-render
+      '@univerjs/network':
+        specifier: workspace:*
+        version: link:../../packages/network
+      '@univerjs/rpc':
+        specifier: workspace:*
+        version: link:../../packages/rpc
+      '@univerjs/sheets':
+        specifier: workspace:*
+        version: link:../../packages/sheets
+      '@univerjs/sheets-formula':
+        specifier: workspace:*
+        version: link:../../packages/sheets-formula
+      '@univerjs/sheets-formula-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-formula-ui
+      '@univerjs/sheets-numfmt':
+        specifier: workspace:*
+        version: link:../../packages/sheets-numfmt
+      '@univerjs/sheets-numfmt-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-numfmt-ui
+      '@univerjs/sheets-ui':
+        specifier: workspace:*
+        version: link:../../packages/sheets-ui
+      '@univerjs/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+    devDependencies:
+      '@univerjs-infra/shared':
+        specifier: workspace:*
+        version: link:../../common/shared
+      '@univerjs/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      react:
+        specifier: 19.2.4
+        version: 19.2.4
+      react-dom:
+        specifier: 19.2.4
+        version: 19.2.4(react@19.2.4)
+      rxjs:
+        specifier: 7.8.2
+        version: 7.8.2
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
   tests/formula-integration:
     dependencies:
