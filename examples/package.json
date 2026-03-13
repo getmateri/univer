@@ -12,8 +12,10 @@
         "@univerjs/ui": "workspace:*"
     },
     "devDependencies": {
+        "@univerjs-infra/shared": "workspace:*",
         "rolldown": "^1.0.0-rc.9",
         "serve": "^14.2.6",
+        "tailwindcss-animate": "^1.0.7",
         "tsx": "^4.21.0",
         "typescript": "^5.9.3"
     }
