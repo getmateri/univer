@@ -25,8 +25,11 @@ const SRC_DIR = resolve(CONFIG_DIR, 'src');
 const DIST_DIR = resolve(CONFIG_DIR, 'dist');
 
 export default defineConfig({
+    transform: {
+        jsx: 'react-jsx',
+    },
     input: {
-        main: resolve(SRC_DIR, 'main.ts'),
+        main: resolve(SRC_DIR, 'main.tsx'),
         'sheets/main': resolve(SRC_DIR, 'sheets/main.ts'),
     },
     output: {

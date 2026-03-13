@@ -1,5 +1,5 @@
 {
-    "name": "univer-examples-rolldown",
+    "name": "univer-examples",
     "type": "module",
     "private": true,
     "scripts": {
@@ -8,7 +8,8 @@
     },
     "dependencies": {
         "@univerjs/core": "workspace:*",
-        "@univerjs/themes": "workspace:*"
+        "@univerjs/themes": "workspace:*",
+        "@univerjs/ui": "workspace:*"
     },
     "devDependencies": {
         "rolldown": "^1.0.0-rc.9",
